@@ -1,0 +1,62 @@
+[[snippets]]
+  description = "Restart dns cache on mac"
+  command = "sudo killall -HUP mDNSResponder"
+  tag = ["dns"]
+  output = ""
+
+[[snippets]]
+  description = "show logs for pid with relative time"
+  command = "journalctl _PID=<pid> -S -<time>"
+  tag = ["journalctl"]
+  output = ""
+
+[[snippets]]
+  description = "get external ip from command line using opendns"
+  command = "dig +short myip.opendns.com @resolver1.opendns.com"
+  output = ""
+
+[[snippets]]
+  description = "zsh startup time measure"
+  command = "for i in $(seq 1 5); do /usr/bin/time /bin/zsh -i -c exit; done"
+  tag = ["zsh"]
+  output = ""
+
+[[snippets]]
+  description = "Vault Login with ldap"
+  command = "vault login -method ldap username=$USER"
+  tag = ["vault"]
+  output = ""
+
+[[snippets]]
+  description = "ssl certificate date check"
+  command = "echo | openssl s_client -connect <domain>:443 2>/dev/null | openssl x509 -noout -dates"
+  tag = ["ssl"]
+  output = ""
+
+[[snippets]]
+  description = "Get Kafka Info"
+  command = "aws kafka describe-cluster --cluster-arn=<cluster_arn>"
+  tag = ["kafka", "aws"]
+  output = ""
+
+[[snippets]]
+  description = "Get Kafka bootstrap brokers info"
+  command = "aws kafka get-bootstrap-brokers --cluster=<cluster_arn>"
+  tag = ["kafka", "aws"]
+  output = ""
+
+[[snippets]]
+  description = "List topics and brokers of kafka cluster with kcat"
+  command = "kcat -b <broker> -L"
+  tag = ["kafka", "kcat"]
+  output = ""
+
+[[snippets]]
+  description = "Get eks cluster information"
+  command = "aws eks describe-cluster --name=<cluster name>"
+  output = ""
+
+[[snippets]]
+  description = "Logout of AWS sso"
+  command = "aws sso logout"
+  output = ""
