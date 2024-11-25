@@ -1,2 +1,2 @@
-# person_pet_snippets
+# Personal Pet Snippets
 Snippets for pet that are for personal use 
