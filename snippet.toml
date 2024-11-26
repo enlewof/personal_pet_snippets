@@ -54,9 +54,17 @@
 [[snippets]]
   description = "Get eks cluster information"
   command = "aws eks describe-cluster --name=<cluster name>"
+  tag  = ["eks", "aws"]
   output = ""
 
 [[snippets]]
   description = "Logout of AWS sso"
   command = "aws sso logout"
+  tag = ["aws"]
+  output = ""
+
+[[snippets]]
+  description = "Sync with s3 bucket"
+  command = "aws s3 sync <source> <destination>"
+  tag = ["aws", "s3"]
   output = ""
