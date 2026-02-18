@@ -68,3 +68,9 @@
   command = "aws s3 sync <source> <destination>"
   tag = ["aws", "s3"]
   output = ""
+
+[[snippets]]
+  description = "List ECS clusters"
+  command = "aws ecs list-clusters"
+  tag = ["aws", "ecs"]
+  output = ""
